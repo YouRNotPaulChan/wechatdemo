@@ -1,0 +1,15 @@
+<!--pages/homepage/homepage.wxml-->
+<view wx:for="{{ArrayList}}" wx:key="index">
+  <form bind:submit="testSubmit" report-submit="true" data-pwd='{{item.pwd}}' data-room='{{item.room}}'>
+    <!-- <button formType="submit">发送模板消息</button> -->
+    <van-card
+      title="xbed测试酒店{{item.title}}"
+      desc="点击按钮获取入住密码{{item.desc}}"
+      thumb="{{item.photo_url}}"
+    >
+      <view slot="footer">
+        <button formType="submit" size='mini' plain='true' type='primary'>获取入住密码</button>
+      </view>
+    </van-card>
+  </form>
+</view>

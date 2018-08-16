@@ -1,0 +1,4 @@
+/* pages/homepage/homepage.wxss */
+van-nav-bar{
+  padding-top: 130rpx;
+}
